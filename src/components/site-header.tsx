@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import { GitFork, Moon, Sun } from "lucide-react"
@@ -16,12 +17,13 @@ export function SiteHeader() {
           href="/"
           className="group flex items-center gap-2.5 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <span className="grid size-5 grid-cols-2 gap-[2px]" aria-hidden="true">
-            <span className="bg-foreground" />
-            <span className="bg-foreground/35" />
-            <span className="bg-foreground/55" />
-            <span className="bg-foreground/15" />
-          </span>
+          <Image
+            src="/dithereal-mark.png"
+            alt=""
+            width={24}
+            height={24}
+            className="size-6 object-contain"
+          />
           <span className="text-sm font-semibold tracking-[-0.02em]">
             dithereal
           </span>
