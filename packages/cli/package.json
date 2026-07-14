@@ -1,0 +1,39 @@
+{
+  "name": "dithereal",
+  "version": "0.1.0",
+  "description": "Install Dithereal WebGL components into a shadcn project.",
+  "keywords": [
+    "dithereal",
+    "dither",
+    "webgl",
+    "react",
+    "shadcn",
+    "cli",
+    "registry"
+  ],
+  "homepage": "https://dithereal.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisbuild/Dithereal.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/barisbuild/Dithereal/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "dithereal": "./bin/dithereal.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

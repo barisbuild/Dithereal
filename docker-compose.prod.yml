@@ -1,0 +1,29 @@
+services:
+  dithereal:
+    container_name: dithereal
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - coolify
+    labels:
+      traefik.enable: "true"
+      traefik.http.middlewares.dithereal-gzip.compress: "true"
+      traefik.http.middlewares.dithereal-https.redirectscheme.scheme: "https"
+      traefik.http.routers.dithereal-http.entryPoints: "http"
+      traefik.http.routers.dithereal-http.middlewares: "dithereal-https"
+      traefik.http.routers.dithereal-http.rule: "Host(`dithereal.dev`) || Host(`www.dithereal.dev`)"
+      traefik.http.routers.dithereal-http.service: "dithereal-http"
+      traefik.http.routers.dithereal.entryPoints: "https"
+      traefik.http.routers.dithereal.middlewares: "dithereal-gzip"
+      traefik.http.routers.dithereal.rule: "Host(`dithereal.dev`) || Host(`www.dithereal.dev`)"
+      traefik.http.routers.dithereal.service: "dithereal"
+      traefik.http.routers.dithereal.tls: "true"
+      traefik.http.routers.dithereal.tls.certresolver: "letsencrypt"
+      traefik.http.services.dithereal-http.loadbalancer.server.port: "3000"
+      traefik.http.services.dithereal.loadbalancer.server.port: "3000"
+
+networks:
+  coolify:
+    external: true

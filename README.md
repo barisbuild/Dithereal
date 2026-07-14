@@ -1,4 +1,18 @@
-# ditherminimal
+# Dithereal
+
+Dithered WebGL components for React.
+
+```bash
+npx dithereal add dithereal
+```
+
+Install a single component:
+
+```bash
+npx dithereal add dither-checkbox
+```
+
+The registry is served from `https://dithereal.dev/r` and the CLI delegates installation to shadcn.
 
 A small working gallery for original, low-noise interface components.
 

@@ -1,0 +1,211 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "dithereal",
+  "homepage": "https://dithereal.dev",
+  "items": [
+    {
+      "name": "dither-agents",
+      "type": "registry:ui",
+      "title": "Dither Agents",
+      "description": "Pixel-built identities with living internal motion.",
+      "author": "Dithereal",
+      "categories": ["display"],
+      "files": [
+        {
+          "path": "src/components/ui/dither-orb-avatar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-orb-avatar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dither-slider",
+      "type": "registry:ui",
+      "title": "Dither Slider",
+      "description": "A tactile range input with a moving pixel field.",
+      "author": "Dithereal",
+      "categories": ["input"],
+      "dependencies": ["react-aria-components@^1.19.0"],
+      "files": [
+        {
+          "path": "src/components/ui/dither-slider.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-slider.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-loader",
+      "type": "registry:ui",
+      "title": "Dither Loader",
+      "description": "A WebGL spinner with a granular light trail.",
+      "author": "Dithereal",
+      "categories": ["feedback"],
+      "files": [
+        {
+          "path": "src/components/application/loading-indicator/loading-indicator.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-loader.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-checkbox",
+      "type": "registry:ui",
+      "title": "Dither Checkbox",
+      "description": "Selection that grows outward from its center.",
+      "author": "Dithereal",
+      "categories": ["input"],
+      "dependencies": ["lucide-react@^1.24.0", "react-aria-components@^1.19.0"],
+      "files": [
+        {
+          "path": "src/components/base/checkbox/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-checkbox.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-button",
+      "type": "registry:ui",
+      "title": "Dither Button",
+      "description": "A focused action with restrained inner sparks.",
+      "author": "Dithereal",
+      "categories": ["input"],
+      "dependencies": ["lucide-react@^1.24.0"],
+      "files": [
+        {
+          "path": "src/components/base/buttons/dither-button.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-button.tsx"
+        },
+        {
+          "path": "src/components/base/badges/badges.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-badge.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-switch",
+      "type": "registry:ui",
+      "title": "Dither Switch",
+      "description": "A two-state control with directional pixel flow.",
+      "author": "Dithereal",
+      "categories": ["input"],
+      "dependencies": ["react-aria-components@^1.19.0"],
+      "files": [
+        {
+          "path": "src/components/base/switch/dither-switch.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-switch.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-badge",
+      "type": "registry:ui",
+      "title": "Dither Badge",
+      "description": "A compact label with a quiet particle interior.",
+      "author": "Dithereal",
+      "categories": ["display"],
+      "files": [
+        {
+          "path": "src/components/base/badges/badges.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-badge.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-card",
+      "type": "registry:ui",
+      "title": "Dither Card",
+      "description": "A transparent surface with edge-bound pixel energy.",
+      "author": "Dithereal",
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/base/cards/dither-card.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-card.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "dither-content-divider",
+      "type": "registry:ui",
+      "title": "Dither Content Divider",
+      "description": "A label held between two pixel-built lines.",
+      "author": "Dithereal",
+      "categories": ["layout"],
+      "files": [
+        {
+          "path": "src/components/base/dividers/content-divider.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dither-content-divider.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    },
+    {
+      "name": "ditherize",
+      "type": "registry:ui",
+      "title": "Ditherize",
+      "description": "Turn an image into a living ordered-dither field.",
+      "author": "Dithereal",
+      "categories": ["effect"],
+      "files": [
+        {
+          "path": "src/components/ui/ditherize.tsx",
+          "type": "registry:ui",
+          "target": "@ui/ditherize.tsx"
+        },
+        {
+          "path": "src/lib/dither-palettes.ts",
+          "type": "registry:lib",
+          "target": "@lib/dither-palettes.ts"
+        }
+      ]
+    }
+  ]
+}
